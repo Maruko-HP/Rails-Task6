@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require "csv"
+require "faker"
+Faker::Config.locale = :ja
+
+2000.times do
+  User.create!(name: Faker::Name.name, age: rand(0..100))
+end
+
+puts "初期データの投入に成功しました！"
