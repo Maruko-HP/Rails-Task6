@@ -27,6 +27,13 @@ gem 'jbuilder', '~> 2.7'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
+# データ初期値の投入に使用
+gem 'faker'
+# ページネーション実装に使用
+gem 'kaminari'
+# 検索機能の実装に向けて導入
+gem 'ransack'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
