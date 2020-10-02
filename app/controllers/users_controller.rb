@@ -1,5 +1,8 @@
 class UsersController < ApplicationController
+  # １ページの表示数
+  PER_PAGE = 10
+  
   def index
-    @users = User.limit(15)
+    @users = User.page(params[:page]).per(PER_PAGE)
   end
 end
