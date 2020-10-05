@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   # １ページの表示数
-  PER_PAGE = 10
+  PER_PAGE = 20
   
   def index
     @q = User.ransack(params[:q])
